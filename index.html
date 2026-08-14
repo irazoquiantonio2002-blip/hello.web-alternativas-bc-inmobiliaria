@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+
+  <!-- ═══════════ SEO ═══════════ -->
+  <title>Alternativa BC Inmobiliaria | Compra, Venta y Renta de Propiedades en Baja California</title>
+  <meta name="description" content="Inmobiliaria en Baja California especializada en compra, venta y renta de propiedades. Asesoría profesional y personalizada con conocimiento real del mercado local. Escríbenos por WhatsApp.">
+  <meta name="keywords" content="inmobiliaria Baja California, venta de casas Tijuana, renta de propiedades Baja California, comprar casa Baja California, asesoría inmobiliaria, Alternativa BC Inmobiliaria">
+  <meta name="author" content="Alternativa BC Inmobiliaria">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="./index.html">
+
+  <meta property="og:title" content="Alternativa BC Inmobiliaria | Compra, Venta y Renta de Propiedades">
+  <meta property="og:description" content="Asesoría inmobiliaria profesional y personalizada en Baja California. Compra, venta y renta de propiedades con acompañamiento en todo el proceso.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:image" content="img/logo-alternativa-bc.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Iconos -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/icon-32.png">
+  <link rel="apple-touch-icon" href="img/icon-180.png">
+
+  <!-- Fuentes: Outfit (títulos) · Inter (texto) · Cormorant Garamond (acento premium) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+  <noscript><style>#loader,.loader-curtain{display:none!important}
+    .reveal,.hero-sub,.hero-ctas,.hero-trust,.hero-type{opacity:1!important;transform:none!important}
+    .hero-title .line>span,.split-word>span{transform:none!important}</style></noscript>
+
+  <!-- Datos estructurados (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "Alternativa BC Inmobiliaria",
+    "description": "Intermediación inmobiliaria: compra, venta y renta de propiedades con asesoría profesional y personalizada.",
+    "telephone": "+52 664 624 1636",
+    "areaServed": { "@type": "State", "name": "Baja California, México" },
+    "image": "img/logo-alternativa-bc.png",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER — logo + spinner + progreso (nunca pantalla en blanco)
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <img src="img/isotipo-alternativa-bc.png" alt="">
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando <b id="loader-pct">0</b>%</span>
+  </div>
+  <!-- Cortina de apertura: se abre en dos hojas al terminar la carga -->
+  <div class="loader-curtain" aria-hidden="true"><span></span><span></span></div>
+
+  <!-- Progreso de lectura -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+  <!-- Halo que sigue el cursor (escritorio) -->
+  <div id="spotlight" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Alternativa BC Inmobiliaria — inicio">
+          <img src="img/isotipo-alternativa-bc.png"
+               alt="Logotipo de Alternativa BC Inmobiliaria">
+          <div class="nav-logo-copy">
+            <span>ALTERNATIVA BC</span>
+            <span>Inmobiliaria</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué nosotros</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#galeria">Propiedades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <!-- CTA de WhatsApp siempre visible -->
+        <a href="https://wa.me/526646241636?text=Hola%2C%20Alternativa%20BC%20Inmobiliaria.%20Vi%20su%20sitio%20web%20y%20quiero%20recibir%20asesor%C3%ADa."
+           target="_blank" rel="noopener noreferrer"
+           class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          <i class="fa-brands fa-whatsapp" style="font-size:16px;"></i>
+          WhatsApp
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Menú móvil -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué nosotros</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#galeria">Propiedades</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/526646241636?text=Hola%2C%20Alternativa%20BC%20Inmobiliaria.%20Vi%20su%20sitio%20web%20y%20quiero%20recibir%20asesor%C3%ADa."
+         target="_blank" rel="noopener noreferrer">Escribir por WhatsApp →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Fondo con efecto fijo (parallax) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge" id="hero-badge">
+            <div class="badge-dot" aria-hidden="true"></div>
+            Compra · Venta · Renta — Baja California
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Las llaves de</span></span>
+            <span class="line"><span>tu próxima</span></span>
+            <span class="line"><span class="accent">oportunidad.</span></span>
+          </h1>
+
+          <p class="hero-type" id="hero-type">
+            Te acompañamos a <span id="type-rotator" data-words="comprar|vender|rentar"></span>
+          </p>
+
+          <p class="hero-sub" id="hero-sub">
+            Intermediación inmobiliaria con <strong>enfoque profesional y personalizado</strong>.
+            Conocemos el mercado local y convertimos ese conocimiento en asesoría confiable
+            para propietarios, compradores y arrendatarios.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar Asesoría
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;" aria-hidden="true"></i>
+            </a>
+            <a href="#servicios" class="btn-outline">
+              <i class="fa-solid fa-key" style="font-size:15px; color:var(--gray);" aria-hidden="true"></i>
+              Ver Servicios
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Nuestros diferenciadores">
+            <div class="trust-item">
+              <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
+              Asesoría personalizada
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+              Conocimiento del mercado local
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+              Acompañamiento en todo el proceso
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         POR QUÉ ELEGIRNOS — 4 tarjetas numeradas
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <canvas class="sec-particles" aria-hidden="true"></canvas>
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading" data-split>
+              Una propiedad no se vende sola…
+              <em> se vende con la asesoría correcta.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Lo que nos distingue es el enfoque profesional y personalizado con el que trabajamos
+            cada caso, respaldado por experiencia y conocimiento real del mercado local.
+            Eso es lo que convierte una decisión importante en una decisión segura.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-tie"></i>
+            </div>
+            <h3>Trato personalizado</h3>
+            <p>No aplicamos fórmulas genéricas. Escuchamos tu objetivo —vender, comprar o rentar— y diseñamos la estrategia alrededor de él.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h3>Mercado local, no teoría</h3>
+            <p>Conocemos las zonas, los precios reales y el comportamiento del mercado en Baja California. Ese conocimiento se traduce en mejores decisiones.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Asesoría confiable</h3>
+            <p>Información clara y honesta en cada etapa. Sabrás exactamente en qué punto está tu operación y qué sigue.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Compromiso hasta el cierre</h3>
+            <p>Nuestro trabajo no termina al mostrar una propiedad: te acompañamos de principio a fin hasta concretar la operación.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIOS
+    ══════════════════════════════════════════════════ -->
+    <section id="servicios" aria-labelledby="serv-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestros servicios</div>
+            <h2 class="section-title" id="serv-heading">
+              Tres formas de<br>
+              <span class="gold">abrirte la puerta correcta</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:460px; line-height:1.7;">
+              Intermediación inmobiliaria completa: te representamos si vendes, si compras o si rentas.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Qué necesitas hoy?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- VENTA -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1400&auto=format&fit=crop"
+              alt="Llaves de una propiedad entregadas junto a un llavero con forma de casa"
+              loading="lazy">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,215,0,.12); border-color:rgba(255,215,0,.38);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-tag" style="color:#FFD700;"></i>
+              </div>
+              <h3>Venta de propiedades</h3>
+              <p>¿Eres propietario? Posicionamos tu inmueble con la estrategia y el precio adecuados para atraer al comprador correcto, no a cualquiera.</p>
+              <div class="amb-temp">Para propietarios</div>
+            </div>
+          </div>
+
+          <!-- COMPRA -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1400&auto=format&fit=crop"
+              alt="Interior de una casa moderna en venta con acabados de calidad"
+              loading="lazy">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,215,0,.12); border-color:rgba(255,215,0,.38);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-house-chimney" style="color:#FFD700;"></i>
+              </div>
+              <h3>Compra de inmuebles</h3>
+              <p>Te ayudamos a encontrar la propiedad que realmente se ajusta a lo que buscas y a tu presupuesto, con asesoría en cada paso de la negociación.</p>
+              <div class="amb-temp">Para compradores</div>
+            </div>
+          </div>
+
+          <!-- RENTA -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1400&auto=format&fit=crop"
+              alt="Departamento amueblado disponible en renta"
+              loading="lazy">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,215,0,.12); border-color:rgba(255,215,0,.38);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-key" style="color:#FFD700;"></i>
+              </div>
+              <h3>Renta y arrendamiento</h3>
+              <p>Conectamos propietarios con arrendatarios adecuados y damos claridad a ambas partes para que el acuerdo funcione desde el primer día.</p>
+              <div class="amb-temp">Para propietarios y arrendatarios</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <canvas class="sec-particles" aria-hidden="true"></canvas>
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Claro, ordenado y <span class="gold">sin sorpresas</span>
+          </h2>
+          <p>Tres pasos para que sepas exactamente qué esperar desde el primer mensaje.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Nos cuentas qué buscas</h3>
+            <p>Escríbenos por WhatsApp o llena el formulario. Escuchamos tu objetivo, tu zona de interés y tus tiempos para entender el caso a fondo.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Recibes asesoría a la medida</h3>
+            <p>Te damos una lectura honesta del mercado local y te presentamos las opciones que realmente encajan con lo que necesitas.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Cerramos con acompañamiento</h3>
+            <p>Te guiamos en la negociación y el papeleo hasta concretar la operación, con seguimiento en cada etapa del proceso.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROPIETARIOS — bloque destacado
+    ══════════════════════════════════════════════════ -->
+    <section id="destacada" aria-labelledby="dest-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <div class="reveal">
+            <div class="label">Para propietarios</div>
+            <h2 class="section-title" id="dest-heading">
+              Tu propiedad merece<br>
+              <span class="gold">algo más que un anuncio</span>
+            </h2>
+            <p class="producto-lead">
+              Vender o rentar un inmueble es una de las decisiones financieras más importantes que vas a tomar.
+              Nuestro trabajo es que la tomes con información real, respaldo profesional y una estrategia pensada
+              para tu propiedad en particular.
+            </p>
+
+            <ul class="feature-rows" aria-label="Lo que incluye nuestra asesoría">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+                <div>
+                  <h4>Lectura real del mercado local</h4>
+                  <p>Posicionamos tu inmueble con criterio, no con suposiciones.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-users"></i></div>
+                <div>
+                  <h4>Filtrado de interesados</h4>
+                  <p>Te presentamos prospectos con intención real de comprar o rentar.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-file-signature"></i></div>
+                <div>
+                  <h4>Acompañamiento en la negociación</h4>
+                  <p>Te representamos y te explicamos cada punto antes de firmar.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-comments"></i></div>
+                <div>
+                  <h4>Comunicación constante</h4>
+                  <p>Siempre sabes en qué etapa va tu operación y cuál es el siguiente paso.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Servicios que ofrecemos">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Compra</span>
+                <span class="spec-name">Te acompañamos</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Venta</span>
+                <span class="spec-name">Te representamos</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Renta</span>
+                <span class="spec-name">Te conectamos</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Asesoría</span>
+                <span class="spec-name">De principio a fin</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="property-visual"
+                   role="img" aria-label="Residencia moderna representativa del tipo de propiedades que asesoramos">
+              </div>
+              <div class="p-badge pb-tl">
+                <div class="p-badge-dot" aria-hidden="true"></div>
+                Asesoría personalizada
+              </div>
+              <div class="p-badge pb-br">
+                <i class="fa-solid fa-key" style="color:var(--gold);" aria-hidden="true"></i>
+                Compra · Venta · Renta
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS — contadores animados
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Nuestro enfoque en números">
+      <canvas class="sec-particles" aria-hidden="true"></canvas>
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="3" aria-label="3 servicios">0</div>
+            <div class="stat-lbl">Servicios integrales<br>compra, venta y renta</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="2" aria-label="2 lados de la operación">0</div>
+            <div class="stat-lbl">Lados de la operación<br>vendes o compras, te representamos</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="100" data-suffix="%" aria-label="100 por ciento">0</div>
+            <div class="stat-lbl">Asesoría<br>personalizada</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num" data-count="360" data-suffix="°" aria-label="360 grados">0</div>
+            <div class="stat-lbl">Acompañamiento<br>de principio a fin</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         A QUIÉN ASESORAMOS
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">A quién asesoramos</div>
+          <h2 class="section-title" id="sec-heading">
+            Sea cual sea tu <span class="gold">punto de partida</span>
+          </h2>
+          <p>Trabajamos con los dos lados del mercado, siempre con el mismo estándar de atención.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-house-user sector-icon" aria-hidden="true"></i>
+            <h3>Propietarios que venden</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-magnifying-glass-location sector-icon" aria-hidden="true"></i>
+            <h3>Compradores</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-key sector-icon" aria-hidden="true"></i>
+            <h3>Propietarios que rentan</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-person-shelter sector-icon" aria-hidden="true"></i>
+            <h3>Arrendatarios</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         BANDA PARALLAX — CTA intermedio (texto sobre imagen fija)
+    ══════════════════════════════════════════════════ -->
+    <section class="parallax-band"
+             style="background-image:url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2400&auto=format&fit=crop');"
+             aria-labelledby="band-heading">
+      <div class="container">
+        <div class="band-inner reveal">
+          <div class="label">¿Listo para dar el paso?</div>
+          <h2 id="band-heading" data-split>
+            Cuéntanos qué buscas y te decimos exactamente por dónde empezar.
+          </h2>
+          <p>
+            Un mensaje es suficiente para recibir una lectura clara de tu situación,
+            sin tecnicismos y sin rodeos.
+          </p>
+          <div class="band-ctas">
+            <a href="https://wa.me/526646241636?text=Hola%2C%20Alternativa%20BC%20Inmobiliaria.%20Quiero%20asesor%C3%ADa%20sobre%20una%20propiedad."
+               target="_blank" rel="noopener noreferrer" class="btn-gold">
+              <i class="fa-brands fa-whatsapp" style="font-size:17px;" aria-hidden="true"></i>
+              Escribir por WhatsApp
+            </a>
+            <a href="#contacto" class="btn-outline">
+              <i class="fa-solid fa-paper-plane" style="font-size:14px; color:var(--gray);" aria-hidden="true"></i>
+              Llenar formulario
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALERÍA
+         ⚠ SUSTITUIR por fotografías reales del inventario del cliente.
+           Las imágenes actuales son de banco (Unsplash) y sirven de
+           marcador visual con la composición y proporción finales.
+    ══════════════════════════════════════════════════ -->
+    <section id="galeria" aria-labelledby="gal-heading">
+      <canvas class="sec-particles" aria-hidden="true"></canvas>
+      <div class="container">
+
+        <div class="galeria-hdr reveal">
+          <div class="label">Propiedades</div>
+          <h2 class="section-title" id="gal-heading">
+            Encuentra el espacio <span class="gold">que estás buscando</span>
+          </h2>
+          <p>Nuestro inventario cambia constantemente. Escríbenos por WhatsApp y te compartimos las opciones disponibles hoy según tu zona y presupuesto.</p>
+        </div>
+
+        <div class="galeria-grid">
+          <div class="g-item tall reveal">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=1200&auto=format&fit=crop"
+                 alt="Residencia moderna de dos niveles con fachada contemporánea" loading="lazy">
+            <div class="g-cap"><span>Residencial</span><h4>Casa moderna</h4></div>
+          </div>
+          <div class="g-item wide reveal d1">
+            <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=1400&auto=format&fit=crop"
+                 alt="Sala interior luminosa con acabados minimalistas" loading="lazy">
+            <div class="g-cap"><span>Interiores</span><h4>Espacios luminosos</h4></div>
+          </div>
+          <div class="g-item reveal d2">
+            <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?q=80&w=1200&auto=format&fit=crop"
+                 alt="Edificio de departamentos en zona urbana" loading="lazy">
+            <div class="g-cap"><span>Departamentos</span><h4>Vivienda vertical</h4></div>
+          </div>
+          <div class="g-item reveal">
+            <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1200&auto=format&fit=crop"
+                 alt="Cocina integral equipada en propiedad residencial" loading="lazy">
+            <div class="g-cap"><span>Interiores</span><h4>Cocina integral</h4></div>
+          </div>
+          <div class="g-item reveal d1">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1200&auto=format&fit=crop"
+                 alt="Sala comedor luminosa en propiedad residencial" loading="lazy">
+            <div class="g-cap"><span>Interiores</span><h4>Sala comedor</h4></div>
+          </div>
+          <div class="g-item reveal d2">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=1400&auto=format&fit=crop"
+                 alt="Casa residencial con pórtico y amplio jardín frontal" loading="lazy">
+            <div class="g-cap"><span>Residencial</span><h4>Casa con jardín</h4></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu propiedad</span>
+          </h2>
+          <p>Cuéntanos qué necesitas y te respondemos por WhatsApp con asesoría concreta.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Datos del negocio -->
+          <div class="contact-info">
+            <h3>Atención personalizada</h3>
+            <p class="ci-sub">Asesoría inmobiliaria profesional para compra, venta y renta de propiedades en Baja California.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p><a href="tel:+526646241636">664 624 1636</a></p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>La vía más rápida para agendar tu asesoría.</p>
+                  <a href="https://wa.me/526646241636?text=Hola%2C%20Alternativa%20BC%20Inmobiliaria.%20Quiero%20agendar%20una%20asesor%C3%ADa."
+                     target="_blank" rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Zona de atención</h4>
+                  <p>Baja California, México.<br>
+                     Consulta cobertura y agenda de citas por WhatsApp.</p>
+                </div>
+              </li>
+            </ul>
+
+            <!-- Mapa de referencia de la zona de atención -->
+            <div class="map-wrap">
+              <iframe
+                src="https://www.google.com/maps?q=Tijuana,%20Baja%20California,%20M%C3%A9xico&output=embed"
+                title="Mapa de la zona de atención: Baja California, México"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen></iframe>
+            </div>
+            <p class="map-note">
+              <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+              Mapa de referencia de la zona de atención.
+            </p>
+          </div><!-- /.contact-info -->
+
+          <!-- Formulario → WhatsApp -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar asesoría</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo *</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. María González" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-phone">Teléfono</label>
+                  <input type="tel" id="f-phone" class="form-control"
+                         placeholder="Ej. 664 000 0000" autocomplete="tel">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Asesoría general</option>
+                    <option>Quiero vender mi propiedad</option>
+                    <option>Quiero comprar una propiedad</option>
+                    <option>Quiero rentar mi propiedad</option>
+                    <option>Busco una propiedad en renta</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-zone">Zona de interés</label>
+                  <input type="text" id="f-zone" class="form-control"
+                         placeholder="Ej. Zona Río, Playas…">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Cuéntanos más *</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Tipo de propiedad, presupuesto aproximado, tiempos o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Enviar por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar se abrirá WhatsApp con tu mensaje ya redactado. No compartimos tus datos con terceros.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="img/logo-alternativa-bc.png" alt="Logotipo de Alternativa BC Inmobiliaria">
+          <p>Intermediación inmobiliaria con enfoque profesional y personalizado. Convertimos el conocimiento del mercado local en decisiones seguras para nuestros clientes.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Servicios</h4>
+          <a href="#servicios">Venta de propiedades</a>
+          <a href="#servicios">Compra de inmuebles</a>
+          <a href="#servicios">Renta y arrendamiento</a>
+          <a href="#destacada">Asesoría a propietarios</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <a href="#why">Por qué nosotros</a>
+          <a href="#proceso">Cómo trabajamos</a>
+          <a href="#galeria">Propiedades</a>
+          <a href="#contacto">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="tel:+526646241636">664 624 1636</a>
+          <a href="https://wa.me/526646241636" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <span>Baja California, México</span>
+        </div>
+      </div>
+
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="img/isotipo-alternativa-bc.png" alt="">
+          <span>Las llaves de tu próxima oportunidad.</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Alternativa BC Inmobiliaria. Todos los derechos reservados.
+        </p>
+        <div class="footer-socials">
+          <a href="https://wa.me/526646241636" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          <a href="tel:+526646241636" class="footer-soc" aria-label="Llamar por teléfono">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       WHATSAPP FLOTANTE
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/526646241636?text=Hola%2C%20Alternativa%20BC%20Inmobiliaria.%20Vi%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20recibir%20asesor%C3%ADa."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
