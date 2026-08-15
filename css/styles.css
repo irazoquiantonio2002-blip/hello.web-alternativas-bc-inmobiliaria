@@ -239,21 +239,21 @@ body.loaded .loader-curtain span:nth-child(2){transform:scaleY(0);transition:tra
 .nav-inner{display:flex;align-items:center;gap:28px;height:var(--nav-h)}
 
 /* Logo grande y simétrico (nunca pequeño) */
-.nav-logo{display:flex;align-items:center;gap:16px;flex-shrink:0}
+.nav-logo{display:flex;align-items:center;gap:18px;flex-shrink:0}
 .nav-logo img{
-  height:78px;width:auto;
+  height:88px;width:auto;
   filter:drop-shadow(0 3px 14px rgba(255,215,0,.28));
   transition:transform .5s var(--ease),filter .5s var(--ease);
 }
 .nav-logo:hover img{transform:scale(1.05);filter:drop-shadow(0 4px 22px rgba(255,215,0,.5))}
-#navbar.scrolled .nav-logo img{height:66px}
+#navbar.scrolled .nav-logo img{height:74px}
 .nav-logo-copy{display:flex;flex-direction:column;line-height:1.05}
 .nav-logo-copy span:first-child{
-  font-family:var(--font-display);font-size:21px;font-weight:700;
-  letter-spacing:.1em;color:var(--white);
+  font-family:var(--font-display);font-size:25px;font-weight:700;
+  letter-spacing:.08em;color:var(--white);
 }
 .nav-logo-copy span:last-child{
-  font-size:11px;font-weight:500;letter-spacing:.38em;
+  font-size:12px;font-weight:500;letter-spacing:.36em;
   text-transform:uppercase;color:var(--gold);
 }
 
@@ -1029,6 +1029,8 @@ footer::before{
 
 @media (max-width:900px){
   :root{--nav-h:80px}
+  .nav-logo img{height:72px}
+  #navbar.scrolled .nav-logo img{height:64px}
   section{padding:88px 0}
   .ambientes-grid{grid-template-columns:1fr;gap:20px}
   .amb-card{height:440px}
@@ -1047,10 +1049,10 @@ footer::before{
   :root{--nav-h:74px}
   .container{padding-inline:18px}
   section{padding:72px 0}
-  .nav-logo img{height:58px}
-  #navbar.scrolled .nav-logo img{height:52px}
-  .nav-logo-copy span:first-child{font-size:16px}
-  .nav-logo-copy span:last-child{font-size:8px}
+  .nav-logo img{height:66px}
+  #navbar.scrolled .nav-logo img{height:58px}
+  .nav-logo-copy span:first-child{font-size:18px}
+  .nav-logo-copy span:last-child{font-size:9px}
   #hero{padding:calc(var(--nav-h) + 44px) 0 90px;min-height:auto}
   .hero-title{font-size:clamp(35px,10.5vw,52px)}
   .hero-badge{font-size:10px;letter-spacing:.12em;padding:8px 15px 8px 12px}
